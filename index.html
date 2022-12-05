@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<!--divinectorweb.com-->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>langlopende taak</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><span class="text-warning">NANDO</span>COOMANS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="overzicht.html">Projecten</a>
+          </li> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="topic1.html">topic1</a></li>
+              <li><a class="dropdown-item" href="topic2.html">topic2</a></li>
+              <li><a class="dropdown-item" href="topic3.html">topic3</a></li>
+              <li><a class="dropdown-item" href="topic4.html">topic4</a></li>
+              <li><a class="dropdown-item" href="topic5.html">topic5</a></li>
+              <li><a class="dropdown-item" href="topic6.html">topic6</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li> 
+          <li class="nav-item">
+            <form class=col-8>
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Zoeken" onchange="location = this.value;">
+              <datalist id="datalistOptions">
+                <option value="topic1.html">topic 1</option>
+                <option value="topic2.html">topic 2</option>
+                <option value="topic3.html">topic 3</option>
+                <option value="topic4.html">topic 4</option>
+                <option value="topic5.html">topic 5</option>
+                <option value="topic6.html">topic 6</option>
+                <option value="overzicht.html">projecten</option>
+                <option value="contact.html">contact</option>
+                <option value="index.html">home</option>
+                <option value="topic1.html#bespaar">t1 besparen</option>
+                <option value="topic1.html#conclusie">t1 conclusie</option>
+                <option value="topic2.html#functies">t1 functies</option>
+                <option value="topic2.html#slim">t2 slim</option>
+                <option value="topic2.html#iot">t2 iot</option>
+                <option value="topic3.html#modern">t3 modern</option>
+                <option value="topic3.html#huis">t3 huis</option>
+                <option value="topic3.html#aantrek">t3 aantrek</option>
+                <option value="topic4.html#keuze">t4 keuze</option>
+                <option value="topic4.html#kopen">t4 kopen</option>
+                <option value="topic4.html#functies">t4 functies</option>
+                <option value="topic5.html#hoe">t5 hoe</option>
+                <option value="topic5.html#welke">t5 welke</option>
+                <option value="topic5.html#wat">t5 wat</option>
+                <option value="topic6.html#verwarmen">t6 verwarmen</option>
+                <option value="topic6.html#domoticasystemen">t6 domotica</option>
+                <option value="topic6.html#besparen">t6 besparen</option>
+                </select>
+                </div>
+            </form>
+          </li>       
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="contact" class="contact section-padding">
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-lg-none section-header text-center">
+                  <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/foto1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h3 class="fw-bolder">Huis van de toekomst</h3>
+                              <p class="text-warning fw-bolder display3">Langlopende taak van Nando Coomans</p>
+                              <p><a href="#wie" class="btn btn-warning mt-3">Wie ben ik?</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/foto2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h3 class="fw-bolder">Projecten</h3>
+                              <p class="text-warning fw-bolder">Overzicht van alle projecten</p>
+                              <p><a href="overzicht.html" class="btn btn-warning mt-3">Alle projecten</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/foto3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h3 class="fw-bolder">Contact</h3>
+                              <p class="text-warning fw-bolder">Neem contact op</p>
+                              <p><a href="contact.html" class="btn btn-warning mt-3">Neem contact op</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- overmij starts -->
+    </section>
+    <section id="wie">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-md-12 col-12 mb-5 mt-3">
+                <figure class="figure">
+                  <img src="img/nando123.jpg" class="figure-img img-fluid paginafoto" alt="">
+                  <figcaption class="figure-caption">dit ben ik</figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-8 col-md-12 col-12 mt-3">
+                      <h2>Nando Coomans</h2>
+                      <p>Student IOT met certificaat van pc-technicus. Ik heb gekozen voor domotica omdat ik zelf thuis veel van philips hue, google home en dergelijke heb.</p>
+                          <p>Mijn onderwerp "huis van de toekomst" komt er doordat er elke dag wel nieuwe toepassingen op de markt komen om het leven te vergemakkelijken. Zoals de 6 topics die ik gekozen heb die op residentieel niveau kunnen worden toegepast</p>  <p class="socials">
+                              <i class="bi bi-twitter text-dark mx-1"></i>
+                          <i class="bi bi-facebook text-dark mx-1"></i>
+                          <i class="bi bi-linkedin text-dark mx-1"></i>
+                          <i class="bi bi-instagram text-dark mx-1"></i>
+                          </p>
+            </div>
+          </div>
+      </div>
+                        </section>
+    <!-- overmij ends -->
+      <!-- footer starts -->
+      <footer class="bg-dark p-2 text-center">
+          <div class="container">
+              <p class="text-white">All Right Reserved By @nando coomans</p>
+          </div>
+      </footer>
+      <!-- footer ends -->
+
+
+
+
+
+
+
+
+    
+    
+    <!-- All Js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
