@@ -1,11 +1,7 @@
-.img{
 
-    height: 500px;
-    width:400px;
-}
 
 body {
-    background: #f1fbff
+    background: #f1fbff;
 }
 
 .big{
@@ -19,3 +15,28 @@ body {
     height: 400px;
     width: 600px;
 }
+
+.img{
+
+    height:250px;
+    width:350px;
+}
+
+.grootte{
+
+    height:250px;
+    width:400px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f1fbff;
+    }
