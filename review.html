@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dé koffie-website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link href="./css/style.css" rel="stylesheet">
+  <script src="./js/script-clients.js" defer></script>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="text-warning">NANDO</span>COOMANS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overzicht.html">Projecten</a>
+            </li> 
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Topics
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="energiebesparen.html">Energie besparen</a></li>
+                <li><a class="dropdown-item" href="slimmekoelkast.html">Slimme koelkast</a></li>
+                <li><a class="dropdown-item" href="slimmeraamdecoratie.html">Slimme raamdecoratie</a></li>
+                <li><a class="dropdown-item" href="slimmekoffiemachine.html">Slimme koffiemachine</a></li>
+                <li><a class="dropdown-item" href="slimmeinbraakalarm.html">Slimme inbraakalarm</a></li>
+                <li><a class="dropdown-item" href="slimmeverwarming.html">Slimme verwarming</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="review.html">Reviews</a>
+            </li> 
+            <li class="nav-item">
+              <form class=col-8>
+                <input class="form-control" list="datalistOptions" placeholder="Zoeken" onchange="location = this.value;">
+                <datalist id="datalistOptions">
+                  <option value="energiebesparen.html">topic 1</option>
+                  <option value="slimmekoelkast.html">topic 2</option>
+                  <option value="slimmeraamdecoratie.html">topic 3</option>
+                  <option value="slimmekoffiemachine.html">topic 4</option>
+                  <option value="slimmeinbraakalarm.html">topic 5</option>
+                  <option value="slimmeverwarming.html">topic 6</option>
+                  <option value="overzicht.html">projecten</option>
+                  <option value="contact.html">contact</option>
+                  <option value="index.html">home</option>
+                  <option value="reviews.html">reviews</option>
+                  <option value="energiebesparen.html#titel">topic 1 intro</option>
+                  <option value="energiebesparen.html#bespaar">topic 1 besparen</option>
+                  <option value="energiebesparen.html#conclusie">t1 conclusie</option>
+                  <option value="slimmekoelkast.html#functies">t1 functies</option>
+                  <option value="slimmekoelkast.html#slim">t2 slim</option>
+                  <option value="slimmekoelkast.html#iot">t2 iot</option>
+                  <option value="slimmeraamdecoratie.html#modern">t3 modern</option>
+                  <option value="slimmeraamdecoratie.html#huis">t3 huis</option>
+                  <option value="slimmeraamdecoratie.html#aantrek">t3 aantrek</option>
+                  <option value="slimmekoffiemachine.html#keuze">t4 keuze</option>
+                  <option value="slimmekoffiemachine.html#kopen">t4 kopen</option>
+                  <option value="slimmekoffiemachine.html#functies">t4 functies</option>
+                  <option value="slimmeinbraakalarm.html#hoe">t5 hoe</option>
+                  <option value="slimmeinbraakalarm.html#welke">t5 welke</option>
+                  <option value="slimmeinbraakalarm.html#wat">t5 wat</option>
+                  <option value="slimmeverwarming.html#verwarmen">t6 verwarmen</option>
+                  <option value="slimmeverwarming.html#domoticasystemen">t6 domotica</option>
+                  <option value="slimmeverwarming.html#besparen">t6 besparen</option>
+                  </select>
+                  </div>
+              </form>
+            </li>       
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+
+  <div class="container">
+    <div class="row">
+      <main class="col-md-9 pe-3">
+        <section class="row">
+          <article class="col-12 mb-3">
+            <h2 class="text-uppercase fs-4 fw-bolder pt-3">Wat onze klanten over ons zeggen</h2>
+            <p>Hier worden 6 random reviews gegenereerd uit onze trust-pilot pagina.</p>
+          </article>
+          <hr>
+
+        <section id="clients" class="row">
+          <!-- JavaScript laadt de klanten in met een API -->
+        </section>
+        
+        <hr class="mb-3 p-3">
+
+      </main>
+
+      <aside class="col-md-3 border-start ps-5">
+        <section>
+          <div class="col-md-12">
+              <div class="mb-5">
+              <p>&nbsp;</p>
+          <div class="container ">
+            <div class="card">
+                <div class="card-body">
+                    <img src="img/Image (7).jpeg" alt=""class="img-fluid rounded-circle ahmet">
+                <h3 class="card-title py-2 text-dark">Nando Coomans</h3>
+                <p class="card-text text-dark">Student IOT (internet of things) die een certificaat heeft van pc-technicus</p>
+  
+                <p class="socials">
+                    <i class="bi bi-twitter text-dark mx-1"></i>
+                <i class="bi bi-facebook text-dark mx-1"></i>
+                <i class="bi bi-linkedin text-dark mx-1"></i>
+                <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+                </div>
+            </div>
+        </div>
+              </div>
+          </div>
+         </section>
+      </aside>
+
+    </div>
+  </div>
+      <!-- footer starts -->
+      <footer class="mt-10 bg-dark p-2 text-center fixed-bottom">
+        <div class="container">
+          <p class="text-white">All Right Reserved By @nando coomans</p>
+        </div>
+      </footer>
+      <!-- footer ends -->
+</body>
+
+</html>
