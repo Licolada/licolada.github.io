@@ -21,7 +21,7 @@
 
 <body class="p-3 m-0 border-0 bd-example">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mt-1">
       <div class="container">
         <a class="navbar-brand" href="index.html"><span class="text-warning">NANDO</span>COOMANS</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
               <a class="nav-link" href="review.html">Reviews</a>
             </li> 
             <li class="nav-item">
-              <form class=col-8>
+              <form class="me-2">
                 <input class="form-control" list="datalistOptions" placeholder="Zoeken" onchange="location = this.value;">
                 <datalist id="datalistOptions">
                   <option value="energiebesparen.html">topic 1</option>
@@ -88,6 +88,7 @@
                   <option value="slimmeverwarming.html#besparen">t6 besparen</option>
                   </select>
                   </div>
+                  <button class="btn btn-warning" type="submit">zoeken</button>
               </form>
             </li>       
           </ul>
@@ -96,21 +97,19 @@
     </nav>
 </header>
 
-  <div class="container">
-    <div class="row">
-      <main class="col-md-9 pe-3">
-        <section class="row">
-          <article class="col-12 mb-3">
-            <h2 class="text-uppercase fs-4 fw-bolder pt-3">Wat onze klanten over ons zeggen</h2>
+<div class="container">
+  <div class="row">
+    <main class="col-md-9">
+      <section id="contact" class="row">
+        <article class="col-12 mb-3">
+            <h2>Wat onze klanten over ons zeggen</h2>
             <p>Hier worden 6 random reviews gegenereerd uit onze trust-pilot pagina.</p>
           </article>
-          <hr>
 
         <section id="clients" class="row">
           <!-- JavaScript laadt de klanten in met een API -->
         </section>
         
-        <hr class="mb-3 p-3">
 
       </main>
 
@@ -143,7 +142,7 @@
     </div>
   </div>
       <!-- footer starts -->
-      <footer class="mt-10 bg-dark p-2 text-center fixed-bottom">
+      <footer class=" bg-dark p-2 text-center fixed-bottom">
         <div class="container">
           <p class="text-white">All Right Reserved By &copy;nando coomans G_1iot_d1</p>
         </div>
@@ -152,3 +151,8 @@
 </body>
 
 </html>
+
+
+<section id="clients" class="row">
+  <!-- JavaScript laadt de klanten in met een API -->
+</section>
