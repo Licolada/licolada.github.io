@@ -10,6 +10,27 @@ function random_item(complimenten) {
     return complimenten[Math.floor(Math.random() * complimenten.length)];
 }
 
+// array met merken van koffiebonen
+const woonplaats = ["Antwerpen", "Limburg", "West-Vlaanderen", "Oost-Vlaanderen", "Vlaams-Brabant", "Brussel", "Waals-Brabant", "Namen", "Henegouwen", "Luik", "Luxemburg"];
+// array met merken van koffiebonen
+function random_item(woonplaats) {
+    return woonplaats[Math.floor(Math.random() * woonplaats.length)];
+}
+
+// array met merken van koffiebonen
+const voornaam = ["Kim", "Kris", "Sam", "Robin", "René", "Max", "Jamie", "Jessie", "Senna", "Alex", "Bo"];
+// array met merken van koffiebonen
+function random_item(voornaam) {
+    return voornaam[Math.floor(Math.random() * voornaam.length)];
+}
+
+// array met merken van koffiebonen
+const achternaam = ["Peetermans", "Janssens", "Verheyden", "Vertongen", "Waterslagers", "Boma", "Crucke", "De Tremmerie", "Coomans", "Coppens", "Kurtoglu"];
+// array met merken van koffiebonen
+function random_item(achternaam) {
+    return achternaam[Math.floor(Math.random() * achternaam.length)];
+}
+
 
 
 // maak connectie met random user generator API en haal 6 users op
@@ -36,11 +57,11 @@ fetch('https://randomuser.me/api/?results=6')
             const user = response.results[i];
             html += `<div class="card col-12 col-sm-6 col-md-4 mb-3">
 
-			<img src="${user.picture.large}" class="card-img-top" alt="foto van ${user.name.first} ${user.name.last}">
+			<img src="${user.picture.large}" class="card-img-top" alt="foto van ${random_item(voornaam)} ${random_item(achternaam)}">
 
 			<div class="card-body">
-			<p class="card-title text-uppercase fs-6 fw-bolder pt-3">${user.name.first} ${user.name.last}</p>
-			<p class="card-text h6 small mt-2">Ik kom uit ${user.location.country} en vind IOT bedrijf NANDOCOOMANS super voor hun ${random_item(complimenten)}!</p>
+			<p class="card-title text-uppercase fs-6 fw-bolder pt-3">${random_item(voornaam)} ${random_item(achternaam)}</p>
+			<p class="card-text h6 small mt-2">Ik kom uit ${random_item(woonplaats)} en vind IOT bedrijf NANDOCOOMANS super voor hun ${random_item(complimenten)}!</p>
             <p class="socials">
             <i class="bi bi-star-fill text-dark fs-3"></i>
         <i class="bi bi-star-fill text-dark fs-3"></i>
