@@ -1,13 +1,11 @@
-
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="nl-BE">
   <head>
       <!-- Required meta tags -->
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>energie besparen</title>
+      <title>slimme inbraakalarm</title>
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <!-- JavaScript: Bootstrap Bundle with Popper -->
@@ -25,225 +23,232 @@
      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
      <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
-     <script src="./js/mapScript.js" defer></script>
+     <script src="./js/scriptmap.js" defer></script>
   </head>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"><span class="text-warning">NANDO</span>COOMANS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="overzicht.html">Projecten</a>
-            </li> 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Topics
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="energiebesparen.html">Energie besparen</a></li>
-                <li><a class="dropdown-item" href="slimmekoelkast.html">Slimme koelkast</a></li>
-                <li><a class="dropdown-item" href="slimmeraamdecoratie.html">Slimme raamdecoratie</a></li>
-                <li><a class="dropdown-item" href="slimmekoffiemachine.html">Slimme koffiemachine</a></li>
-                <li><a class="dropdown-item" href="slimmeinbraakalarm.html">Slimme inbraakalarm</a></li>
-                <li><a class="dropdown-item" href="slimmeverwarming.html">Slimme verwarming</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="review.html">Reviews</a>
-            </li> 
-            <li class="nav-item">
-              <form class="me-2">
-                <input class="form-control" list="datalistOptions" placeholder="Zoeken" onchange="location = this.value;">
-                <datalist id="datalistOptions">
-                  <option value="energiebesparen.html">topic 1</option>
-                  <option value="slimmekoelkast.html">topic 2</option>
-                  <option value="slimmeraamdecoratie.html">topic 3</option>
-                  <option value="slimmekoffiemachine.html">topic 4</option>
-                  <option value="slimmeinbraakalarm.html">topic 5</option>
-                  <option value="slimmeverwarming.html">topic 6</option>
-                  <option value="overzicht.html">projecten</option>
-                  <option value="contact.html">contact</option>
-                  <option value="index.html">home</option>
-                  <option value="reviews.html">reviews</option>
-                  <option value="energiebesparen.html#titel">topic 1 intro</option>
-                  <option value="energiebesparen.html#bespaar">topic 1 besparen</option>
-                  <option value="energiebesparen.html#conclusie">t1 conclusie</option>
-                  <option value="slimmekoelkast.html#functies">t1 functies</option>
-                  <option value="slimmekoelkast.html#slim">t2 slim</option>
-                  <option value="slimmekoelkast.html#iot">t2 iot</option>
-                  <option value="slimmeraamdecoratie.html#modern">t3 modern</option>
-                  <option value="slimmeraamdecoratie.html#huis">t3 huis</option>
-                  <option value="slimmeraamdecoratie.html#aantrek">t3 aantrek</option>
-                  <option value="slimmekoffiemachine.html#keuze">t4 keuze</option>
-                  <option value="slimmekoffiemachine.html#kopen">t4 kopen</option>
-                  <option value="slimmekoffiemachine.html#functies">t4 functies</option>
-                  <option value="slimmeinbraakalarm.html#hoe">t5 hoe</option>
-                  <option value="slimmeinbraakalarm.html#welke">t5 welke</option>
-                  <option value="slimmeinbraakalarm.html#wat">t5 wat</option>
-                  <option value="slimmeverwarming.html#verwarmen">t6 verwarmen</option>
-                  <option value="slimmeverwarming.html#domoticasystemen">t6 domotica</option>
-                  <option value="slimmeverwarming.html#besparen">t6 besparen</option>
-                  </select>
-                  </div>
-                  <button class="btn btn-warning" type="submit">zoeken</button>
-              </form>
-            </li>       
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  
-  <body>
-  <main id="titel" class="ps-5">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-    <div class="row">
-    <main class="col-md-12">
-      <section  class="contact section-padding">
-        <div class="container mt-5 mb-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header text-center ">
-                      <p>&nbsp;</p>
-                        <h2>Energie besparen</h2>
-                        <p>Energie besparen in oudere huizen met domotica</p>
-                    </div>
+      <a class="navbar-brand" href="index.html"><span class="text-warning">NANDO</span>COOMANS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="overzicht.html">Projecten</a>
+          </li> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="energiebesparen.html">Energie besparen</a></li>
+              <li><a class="dropdown-item" href="slimmekoelkast.html">Slimme koelkast</a></li>
+              <li><a class="dropdown-item" href="slimmeraamdecoratie.html">Slimme raamdecoratie</a></li>
+              <li><a class="dropdown-item" href="slimmekoffiemachine.html">Slimme koffiemachine</a></li>
+              <li><a class="dropdown-item" href="slimmeinbraakalarm.html">Slimme inbraakalarm</a></li>
+              <li><a class="dropdown-item" href="slimmeverwarming.html">Slimme verwarming</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="review.html">Reviews</a>
+          </li> 
+          <li class="nav-item">
+            <form class="d-flex me-2">
+              <input class="form-control" list="datalistOptions" placeholder="Zoeken" onchange="location = this.value;">
+              <datalist id="datalistOptions">
+                <option value="energiebesparen.html">topic 1</option>
+                <option value="slimmekoelkast.html">topic 2</option>
+                <option value="slimmeraamdecoratie.html">topic 3</option>
+                <option value="slimmekoffiemachine.html">topic 4</option>
+                <option value="slimmeinbraakalarm.html">topic 5</option>
+                <option value="slimmeverwarming.html">topic 6</option>
+                <option value="overzicht.html">projecten</option>
+                <option value="contact.html">contact</option>
+                <option value="index.html">home</option>
+                <option value="reviews.html">reviews</option>
+                <option value="energiebesparen.html#titel">topic 1 intro</option>
+                <option value="energiebesparen.html#bespaar">topic 1 besparen</option>
+                <option value="energiebesparen.html#conclusie">t1 conclusie</option>
+                <option value="slimmekoelkast.html#functies">t1 functies</option>
+                <option value="slimmekoelkast.html#slim">t2 slim</option>
+                <option value="slimmekoelkast.html#iot">t2 iot</option>
+                <option value="slimmeraamdecoratie.html#modern">t3 modern</option>
+                <option value="slimmeraamdecoratie.html#huis">t3 huis</option>
+                <option value="slimmeraamdecoratie.html#aantrek">t3 aantrek</option>
+                <option value="slimmekoffiemachine.html#keuze">t4 keuze</option>
+                <option value="slimmekoffiemachine.html#kopen">t4 kopen</option>
+                <option value="slimmekoffiemachine.html#functies">t4 functies</option>
+                <option value="slimmeinbraakalarm.html#hoe">t5 hoe</option>
+                <option value="slimmeinbraakalarm.html#welke">t5 welke</option>
+                <option value="slimmeinbraakalarm.html#wat">t5 wat</option>
+                <option value="slimmeverwarming.html#verwarmen">t6 verwarmen</option>
+                <option value="slimmeverwarming.html#domoticasystemen">t6 domotica</option>
+                <option value="slimmeverwarming.html#besparen">t6 besparen</option>
+              </datalist>
+            <button class="btn btn-warning" type="submit">zoeken</button>
                 </div>
-            </div>
-      <div class="row m-0">
+            </form>
+        </ul>
       </div>
-      </div>
-    </section>
-  
-  
-    <section id="bespaar" class="bespaar section-padding"> 
-      <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-6 col-12 mb-3">
-          <h3>Besparen</h3>
-          <p>Met de stijgende energiekosten wordt het energieverbruik een steeds belangrijker criterium. Ondanks dat veel mensen zich daarvan bewust zijn, verbruiken huishoudens nog steeds (te)veel energie. Een deel daarvan kun je eenvoudig besparen, zonder comfort in te leveren. Integendeel: moderne technologieën verhogen het welzijn binnen de eigen muren én besparen energie.</p>
-          </div>
-      <div class="col-lg-4 col-md-6 col-12 mb-3 text-end">
-        <figure class="figure">
-          <img src="img/detail1.jpg" class="figure-img img-fluid grootte text-end" alt="">
-          <figcaption class="figure-caption text-center">©gira</figcaption>
-        </figure>
-      </div>
-      </div>
-    </section>
-    <section class="bespaar section-padding"> 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-12 mb-3">
-            <figure class="figure">
-              <img src="img/detail2.jpg" class="figure-img img-fluid grootte" alt="">
-              <figcaption class="figure-caption text-center">©gira</figcaption>
-            </figure>
-          </div>
-          <div class="col-lg-8 col-md-6 col-12 ps-lg-5 md-5">
-            <h1 id="bespaar">Met het Gira Smart Home Systeem 3000 bespaar je energie</h1>
-            <p>Alleen nieuwbouwwoningen geschikt voor Smart Home technologie? Zeker niet! Met de Gira systemen kun je ook bestaande woningen relatief eenvoudig omtoveren tot een Smart Home. Een Smart Home is niet alleen comfortabel, het bespaart ook energie. Doordat je bijvoorbeeld de temperatuur per kamer kunt regelen, bespaar je tot wel 25% aan energie! </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-padding"> 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-6 col-12 md-5">
-            <h1 id="voordelen">Functies Gira 3000</h1>
-             <p>Het Gira 3000 systeem komt met tal van voordelen.</p>
-             <table class="table table-striped caption-bottom">
-                <caption>voordelen tabel</caption>
-                <thead>
-                  <tr>
-          <th colspan="2">Voordelen</th>
-          </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Klein assortiment dat de benodigde opslagruimte reduceert</td>
-              <td>Combinatiemogelijkheden van basiselementen en opzetstukken</td>
-            </tr>
-            <tr>
-              <td>Flexibele aanpassing van de mate van automatisering mogelijk</td>
-              <td>Inbedrijfstelling en bediening op het apparaat zelf of in de app</td>
-            </tr>
-            <tr>
-              <td>Lage inbouwdiepte (24 mm) maakt de installatie gemakkelijker</td>
-              <td>Toekomstbestendige, geïntegreerde en flexibele oplossing</td>
-            </tr>
-            <tr>
-              <td>Eenvoudig gebruik</td>
-              <td>Geschikt voor latere montage en nieuwbouw</td>
-            </tr>
-            <tr>
-              <td>Conventionele installatie met vaste bedrading</td>
-              <td>Testtoets voor functiecontrole (bij jaloeziebasiselementen kan via de testtoets de draairichting worden omgekeerd, zonder het apparaat te moeten demonteren)</td>
-            </tr>
-          </tbody>
-          </table>
-          </div>
-          <div class="col-lg-4 col-md-6 col-12 mb-3">
-            <figure class="figure">
-                <img src="img/gira3000.png" class="figure-img img-fluid grootte" alt="">
-                <figcaption class="figure-caption text-center">©gira</figcaption>
-                </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-      <section id="bespaar" class="bespaar section-padding mb-5 pb-5"> 
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 mb-3 text-end">
-              <figure class="figure">
-                <img src="img/Afbeelding3.jpg" class="figure-img img-fluid grootte text-end" alt="">
-                <figcaption class="figure-caption text-center">©shutterstock</figcaption>
-              </figure>
-            </div>
-            <div class="col-lg-8 col-md-6 col-12 mb-3">
-              <h1 id="conclusie">Conclusie</h1>
-              <p>Gira Smart Home Systeem 3000 is een oplossing voor alle oudere huizen die niet gebouwd zijn met oog op de nieuwste energienormen. Zo kan jij in jouw huis gebruik maken van dit systeem om de temperatuur per ruimte te regelen wat resulteert in een verlaagd energiegebruik met 25%. </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-      <aside class=" mt-5 pt-5 d-none d-lg-block">
-        <section class="sidebar">
-          <div class="row">
-            <div class="col-md-12">
-              <nav class="h-20 flex-column align-items-stretch ">
-                <nav class="nav nav-pills flex-column">
-                  <h4>Navigeer <br> pagina</h4>
-                  <a class="nav-link" href="#titel">Intro</a>
-                  <a class="nav-link" href="#bespaar">Besparen</a>
-                  <a class="nav-link" href="#voordelen">Voordelen</a>
-                  <a class="nav-link" href="#conclusie">Conclusie</a>
-                </nav>
-              </nav>
-            </div>
-          </div>
+    </div>
+  </nav>
+  </header>
+  <body>
+  <main id="titel">
+    <section class="container">
+      <section class="row">
+        <section class="col-md-12">
+          <section  class="section-padding">
+            <section class="container mt-5 mb-5">
+              <section class="row">
+                <section class="col-md-12">
+                  <section class="section-header text-center ">
+                    <article>
+                      <p>&nbsp;</p>
+                      <h2>Energie besparen</h2>
+                      <p>Energie besparen in oudere huizen met domotica</p>
+                    </article>
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+          <section class="section-padding"> 
+            <section class="container">
+              <section class="row">
+                <section class="col-lg-8 col-md-6 col-12 mb-3">
+                    <h3>Besparen</h3>
+                    <p>Het enige dat we horen als we deze tijd het nieuws opzetten zijn de hoge energiekosten. En wie moeite heeft om de energiefacturen te betalen gaat zeker geen geld hebben voor een dure nieuwbouw of dure renovaties. Maar ook voor die mensen is er nu goed nieuws! Met het Gira homesysteem kan jij ook fors besparen en zo die torenhoge energiekosten de kop in drukken.</p>
+                </section>
+                <section class="col-lg-4 col-md-6 col-12 mb-3 text-end">
+                  <article>
+                    <figure class="figure">
+                      <img src="img/detail1.jpg" class="figure-img img-fluid grootte text-end" alt="">
+                      <figcaption class="figure-caption text-center">©gira</figcaption>
+                    </figure>
+                  </article>
+                </section>
+              </section>
+            </section>
+          </section>
+            <section id="bespaar" class="section-padding"> 
+              <section class="container">
+                <section class="row">
+                  <section class="col-lg-4 col-md-6 col-12 mb-3">
+                    <article>
+                      <figure class="figure">
+                        <img src="img/detail2.jpg" class="figure-img img-fluid grootte" alt="">
+                        <figcaption class="figure-caption text-center">©gira</figcaption>
+                      </figure>
+                    </article>   
+                  </section>
+                  <section class="col-lg-8 col-md-6 col-12 ps-lg-5 md-5">
+                    <h1>Met het Gira Smart Home Systeem 3000 bespaar je energie</h1>
+                    <p>Wie denkt dat Smart Home technologie enkel voor nieuwbouwwoningen bedoelt is heeft nog nooit gehoord van Gira systemen. Je kan met deze systemen energies besparen en daarbovenop ook meer comfort in je huis hebben. Je kan relatief eenvoudig Gira installeren en direct de talloze voordelen ervaren. Waaronder een energie besparing tot 25%!</p>
+                  </section>
+                </section>
+              </section>
+            </section>
+            <section id="wat" class="bespaar section-padding"> 
+              <section class="container">
+                <section class="row">
+                  <section class="col-lg-8 col-md-6 col-12 mb-3">
+                    <h1>Functies Gira 3000</h1>
+                    <p>Het Gira 3000 systeem komt met tal van voordelen.</p>
+                    <table class="table table-striped caption-bottom">
+                        <caption>voordelen tabel</caption>
+                        <thead>
+                        <tr>
+                      <th colspan="2">Voordelen</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Klein assortiment dat de benodigde opslagruimte reduceert</td>
+                          <td>Combinatiemogelijkheden van basiselementen en opzetstukken</td>
+                        </tr>
+                        <tr>
+                          <td>Flexibele aanpassing van de mate van automatisering mogelijk</td>
+                          <td>Inbedrijfstelling en bediening op het apparaat zelf of in de app</td>
+                        </tr>
+                        <tr>
+                          <td>Lage inbouwdiepte (24 mm) maakt de installatie gemakkelijker</td>
+                          <td>Toekomstbestendige, geïntegreerde en flexibele oplossing</td>
+                        </tr>
+                        <tr>
+                          <td>Eenvoudig gebruik</td>
+                          <td>Geschikt voor latere montage en nieuwbouw</td>
+                        </tr>
+                        <tr>
+                          <td>Conventionele installatie met vaste bedrading</td>
+                          <td>Testtoets voor functiecontrole (bij jaloeziebasiselementen kan via de testtoets de draairichting worden omgekeerd, zonder het apparaat te moeten demonteren)</td>
+                        </tr>
+                      </tbody>
+                      </table>
+                    <p>Met een alarm gekoppeld aan je domotica kan je veel meer dan enkel inbrekers afschrikken. Je kan het ook gebruiken om een gaslek, waterlek of brand tijdig te detecteren. Dan krijg je meteen een melding van het probleem én schakelt het systeem de gas- of waterleiding uit.</p>
+                  </section>
+                  <section class="col-lg-4 col-md-6 col-12 mb-3 text-end">
+                    <article>
+                      <figure class="figure">
+                        <img src="img/gira3000.png" class="figure-img img-fluid grootte" alt="">
+                        <figcaption class="figure-caption text-center">©gira</figcaption>
+                      </figure>
+                    </article> 
+                  </section>
+                </section>
+              </section>
+            </section>
+            <section id="bespaar" class="bespaar section-padding mb-5 pb-5"> 
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-12 mb-3 text-end">
+                    <figure class="figure">
+                      <img src="img/Afbeelding3.jpg" class="figure-img img-fluid grootte text-end" alt="">
+                      <figcaption class="figure-caption text-center">©shutterstock</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-lg-8 col-md-6 col-12 mb-3">
+                    <h1 id="conclusie">Conclusie</h1>
+                    <p>Gira Smart Home Systeem 3000 is een oplossing voor alle oudere huizen die niet gebouwd zijn met oog op de nieuwste energienormen. Zo kan jij in jouw huis gebruik maken van dit systeem om de temperatuur per ruimte te regelen wat resulteert in een verlaagd energiegebruik met 25%. </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
         </section>
-      </aside>
-      <!-- footer starts -->
-      <footer class="mt-10 bg-dark p-2 text-center fixed-bottom">
-        <div class="container">
-          <p class="text-white">All Right Reserved By &copy;nando coomans G_1iot_d1</p>
-        </div>
-      </footer>
+      </section>
+    </section>
+  </main>
+  <aside class=" mt-5 pt-5 d-none d-lg-block">
+    <section class="sidebar">
+      <section class="row">
+        <section class="col-md-12">
+          <nav class="h-20 flex-column align-items-stretch ">
+            <nav class="nav nav-pills flex-column">
+              <h4>Navigeer <br> pagina</h4>
+              <a class="nav-link" href="#titel">Intro</a>
+              <a class="nav-link" href="#hoe">hoe</a>
+              <a class="nav-link" href="#welke">welke</a>
+              <a class="nav-link" href="#wat">wat</a>
+            </nav>
+          </nav>
+        </section>
+      </section>
+    </section>
+  </aside>
+  <!-- footer starts -->
+  <footer class="mt-10 bg-dark p-2 text-center fixed-bottom">
+    <section class="container">
+        <p class="text-white">All Right Reserved By &copy;nando coomans G_1iot_d1</p>
+    </section>
+  </footer>
       <!-- footer ends -->
     </body>
   </html>
